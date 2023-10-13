@@ -22,13 +22,13 @@ pytestmark = [
 )
 def test_exists_lesson_type_inner_class(attr, value, label):
     assert hasattr(Lesson, 'LessonType'), (
-        'Проверьте, что в файле `lessons/models.py` '
+        'Make sure that in the model `lessons/models.py` '
         'в модели `Lesson` объявлен класс `LessonType`.'
     )
 
     actual_attr = getattr(Lesson.LessonType, attr, None)
     assert actual_attr is not None and actual_attr.value == value and actual_attr.label == label, (
-        'Проверьте, что в файле `lessons/models.py` '
+        'Make sure that in the model `lessons/models.py` '
         f'(the `lessons/models.py` file), the attribute `{attr}` of the class `LessonType` corresponds to the task.'
     )
 

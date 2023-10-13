@@ -219,7 +219,7 @@
     "model": "auth.permission",
     "pk": 25,
     "fields": {
-        "name": "Can add категория",
+        "name": "Can add category",
         "content_type": 7,
         "codename": "add_category"
     }
@@ -228,7 +228,7 @@
     "model": "auth.permission",
     "pk": 26,
     "fields": {
-        "name": "Can change категория",
+        "name": "Can change category",
         "content_type": 7,
         "codename": "change_category"
     }
@@ -237,7 +237,7 @@
     "model": "auth.permission",
     "pk": 27,
     "fields": {
-        "name": "Can delete категория",
+        "name": "Can delete category",
         "content_type": 7,
         "codename": "delete_category"
     }
@@ -246,7 +246,7 @@
     "model": "auth.permission",
     "pk": 28,
     "fields": {
-        "name": "Can view категория",
+        "name": "Can view category",
         "content_type": 7,
         "codename": "view_category"
     }
@@ -456,7 +456,7 @@
     "model": "courses.category",
     "pk": 1,
     "fields": {
-        "title": "Основы программирования",
+        "title": "Basic Programming",
         "description": "Курс по основам программирования на языке Python",
         "slug": "osnovy-programmirovaniya",
         "created_at": "2023-04-17T13:37:25.058Z"
@@ -669,7 +669,7 @@
     "pk": 1,
     "fields": {
         "title": "Урок 1. Введение в программирование",
-        "text": "В этом уроке мы рассмотрим основы программирования",
+        "text": "В этом уроке мы рассмотрим Basic Programming",
         "type": "theory",
         "duration": 60,
         "course": 1,

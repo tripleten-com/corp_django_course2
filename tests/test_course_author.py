@@ -16,7 +16,7 @@ def test_superuser_courses(admin_client, courses, courses_with_author):
 
     assert actual_count == expected_count, (
         'Make sure the method `get_queryset` of the admin panel `CourseAdmin` '
-        'для суперпользователя возвращаются все курсы.'
+        'returns all the courses for the super user.'
     )
 
 

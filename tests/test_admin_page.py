@@ -87,7 +87,7 @@ def test_lesson_inline():
 
     assert course_admin_site.inlines == (LessonInline, ), (
         f'Make sure the model `LessonInline` is set up for displaying the related records'
-        'в админ представлении модели `Course`.'
+        'in the admin panel of the `Course` visual representation.'
     )
 
 

@@ -31,7 +31,7 @@ def test_lesson_name(admin_client, lessons):
         'Make sure that the method `lesson_name` in `LessonAdmin` is declared according to the task.'
     )
     assert getattr(LessonAdmin.lesson_name, 'short_description', None) == 'Lesson title', (
-        'Проверьте, что в админке `LessonAdmin` для метода `lesson_name` '
+        'Make sure the method `lesson_name` in `LessonAdmin` '
         'has the required attribute `short_description` according to the task.'
     )
 

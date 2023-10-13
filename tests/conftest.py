@@ -10,7 +10,7 @@ try:
 except ImportError as e:
     raise AssertionError(
         f'When importing the models from `{e.name.replace(".", "/")}.py,` '
-        f'произошла ошибка: {e}') from e
+        f'an error occurred: {e}') from e
 except RuntimeError:
     registered_apps = set(app.name for app in apps.get_app_configs())
     need_apps = {'courses': 'courses', 'lessons': 'lessons'}
@@ -85,5 +85,5 @@ class _TestModelAttrs:
             assert model_field.__dict__.get(param) == value_param, (
                 f'In the `{field}` attribute of `{model_name}`, '
                 f'check whether the value of the `{display_name}` parameter '
-                'на соответствие заданию.'
+                'is the same as in the task.'
             )

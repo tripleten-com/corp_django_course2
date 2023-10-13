@@ -21,7 +21,7 @@ import pytest
         'lessons',
         'Lesson',
         'duration',
-        'Укажите продолжительность курса в минутах.'
+        'State the course duration in minutes.'
     )
 ])
 def test_help_text_translate(n_app, n_model, param, text):
