@@ -15,9 +15,9 @@ pytestmark = [
 @pytest.mark.parametrize(
     'attr, value, label',
     [
-        ('EDU', 'edu', 'Программирование'),
-        ('THEORY', 'theory', 'Теория'),
-        ('QUIZ', 'quiz', 'Викторина'),
+        ('EDU', 'edu', 'Programming'),
+        ('THEORY', 'theory', 'Theory'),
+        ('QUIZ', 'quiz', 'Trivia'),
     ]
 )
 def test_exists_lesson_type_inner_class(attr, value, label):
@@ -29,14 +29,14 @@ def test_exists_lesson_type_inner_class(attr, value, label):
     actual_attr = getattr(Lesson.LessonType, attr, None)
     assert actual_attr is not None and actual_attr.value == value and actual_attr.label == label, (
         'Проверьте, что в файле `lessons/models.py` '
-        f'в модели `Lesson` в классе `LessonType` атрибут `{attr}` соответствует заданию.'
+        f'(the `lessons/models.py` file), the attribute `{attr}` of the class `LessonType` corresponds to the task.'
     )
 
 
 @pytest.mark.parametrize(('field', 'type', 'params'), [
     ('title', CharField, {'max_length': 256}),
     ('text', TextField, {}),
-    ('type', CharField, {'max_length': 16, 'choices': [('edu', 'Программирование'), ('theory', 'Теория'), ('quiz', 'Викторина')]}),
+    ('type', CharField, {'max_length': 16, 'choices': [('edu', 'Programming'), ('theory', 'Theory'), ('quiz', 'Trivia')]}),
     ('duration', PositiveSmallIntegerField, {}),
     ('course', ForeignKey, {'null': False}),
     ('created_at', DateTimeField, {'auto_now_add': True}),
@@ -52,12 +52,12 @@ class TestCategoryModelAttrs(_TestModelAttrs):
 def test__str__(mixer):
     app_label = 'lessons'
     model_name = 'Lesson'
-    title = 'Тестовое название урока'
+    title = 'Test lesson title'
     obj = mixer.blend(f'{app_label}.{model_name}', title=title)
 
     assert str(obj) == title, (
-        f'Убедитесь, что в модели `{model_name}` '
-        'настроено читаемое название объектов согласно заданию.'
+        f'Make sure the model `{model_name}` '
+        'has readable object names that correspond to the task.'
     )
 
 
@@ -67,10 +67,10 @@ def test_author_on_delete(lessons_with_course):
         course.delete()
     except IntegrityError:
         raise AssertionError(
-            'Проверьте, что значение атрибута `on_delete` '
-            'поля `course` в модели `Lesson` соответствует заданию.'
+            'Make sure that the value of the attribute `on_delete`,  '
+            'belonging to the field `course` in the model `Lesson`, corresponds to the task.'
         )
     assert not Lesson.objects.filter(course=course).exists(),  (
-        'Проверьте, что значение атрибута `on_delete` '
-        'поля `course` в модели `Lesson` соответствует заданию.'
+        'Make sure that the value of the attribute `on_delete`,  '
+        'belonging to the field `course` in the model `Lesson`, corresponds to the task.'
     )

@@ -30,12 +30,12 @@ class TestCategoryModelAttrs(_TestModelAttrs):
 def test__str__(mixer):
     app_label = 'courses'
     model_name = 'Course'
-    title = 'Тестовое название курса'
+    title = 'Test course title'
 
     obj = mixer.blend(f'{app_label}.{model_name}', title=title)
     assert str(obj) == title, (
-        f'Убедитесь, что в модели `{model_name}` '
-        'настроено читаемое название объектов согласно заданию.'
+        f'Make sure the model `{model_name}` '
+        'has readable object names that correspond to the task.'
     )
 
 
@@ -45,12 +45,12 @@ def test_author_on_delete(courses_with_author):
         author.delete()
     except IntegrityError:
         raise AssertionError(
-            'Проверьте, что значение атрибута `on_delete` '
-            'поля `author` в модели `Course` соответствует заданию.'
+            'Make sure that the value of the attribute `on_delete`,  '
+            'belonging to the field `author` in the `Course` model, matches the task.'
         )
     assert not Course.objects.filter(author=author).exists(),  (
-        'Проверьте, что значение атрибута `on_delete` '
-        'поля `author` в модели `Course` соответствует заданию.'
+        'Make sure that the value of the attribute `on_delete`,  '
+        'belonging to the field `author` in the `Course` model, matches the task.'
     )
 
 
@@ -60,10 +60,10 @@ def test_category_on_delete(courses_with_category):
         category.delete()
     except IntegrityError:
         raise AssertionError(
-            'Проверьте, что значение атрибута `on_delete` '
-            'поля `category` в модели `Course` соответствует заданию.'
+            'Make sure that the value of the attribute `on_delete`,  '
+            'belonging to the field `category` in the `Course` model, matches the task.'
         )
     assert not Course.objects.filter(category=category).exists(), (
-        'Проверьте, что значение атрибута `on_delete` '
-        'поля `category` в модели `Course` соответствует заданию.'
+        'Make sure that the value of the attribute `on_delete`,  '
+        'belonging to the field `category` in the `Course` model, matches the task.'
     )

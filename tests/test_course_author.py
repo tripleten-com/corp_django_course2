@@ -15,7 +15,7 @@ def test_superuser_courses(admin_client, courses, courses_with_author):
     actual_count = response.context_data['cl'].full_result_count
 
     assert actual_count == expected_count, (
-        'Убедитесь, что в админке `CourseAdmin` в методе `get_queryset` '
+        'Make sure the method `get_queryset` of the admin panel `CourseAdmin` '
         'для суперпользователя возвращаются все курсы.'
     )
 
@@ -28,6 +28,6 @@ def test_author_courses(author_client, courses, courses_with_author):
     actual_count = response.context_data['cl'].full_result_count
 
     assert actual_count == expected_count, (
-        'Убедитесь, что в админке `CourseAdmin` в методе `get_queryset` '
-        'для автора возвращаются только его курсы.'
+        'Make sure the method `get_queryset` of the admin panel `CourseAdmin` '
+        'returns only the courses written by an author when they make such a request.'
     )

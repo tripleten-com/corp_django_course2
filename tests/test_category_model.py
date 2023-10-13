@@ -33,10 +33,10 @@ class TestCategoryModelAttrs(_TestModelAttrs):
 def test__str__(mixer):
     app_label = 'courses'
     model_name = 'Category'
-    title = 'Тестовое название категории'
+    title = 'Test category title'
     obj = mixer.blend(f'{app_label}.{model_name}', title=title)
 
     assert str(obj) == title, (
-        f'Убедитесь, что в модели `{model_name}` '
-        'настроено читаемое название объектов согласно заданию.'
+        f'Make sure the model `{model_name}` '
+        'has readable object names that correspond to the task.'
     )

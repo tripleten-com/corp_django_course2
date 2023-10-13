@@ -9,7 +9,7 @@ try:
     from lessons.models import Lesson  # noqa:F401
 except ImportError as e:
     raise AssertionError(
-        f'При импорте моделей из файла `{e.name.replace(".", "/")}.py` '
+        f'When importing the models from `{e.name.replace(".", "/")}.py,` '
         f'произошла ошибка: {e}') from e
 except RuntimeError:
     registered_apps = set(app.name for app in apps.get_app_configs())
@@ -21,7 +21,7 @@ except RuntimeError:
     for need_app_name, need_app_conf_name in need_apps.items():
         if need_app_conf_name not in registered_apps:
             raise AssertionError(
-                f'Убедитесь, что зарегистрировано приложение {need_app_name}'
+                f'Make sure the app is registered. {need_app_name}'
             )
 
 pytest_plugins = [
@@ -70,20 +70,20 @@ class _TestModelAttrs:
     def test_model_attrs(self, field, type, params):
         model_name = self.model.__name__
         assert hasattr(self.model, field), (
-            f'В модели `{model_name}` укажите атрибут `{field}`.')
+            f'Specify the `{field}` attribute in the model `{model_name}`.')
         model_field = self.model._meta.get_field(field)
         assert isinstance(model_field, type), (
-            f'В модели `{model_name}` у атрибута `{field}` '
-            f'укажите тип `{type}`.'
+            f'Specify `{type}` of the attribute `{field}` '
+            f'in the model `{model_name}`.'
         )
         for param, value_param in params.items():
             display_name = self.get_parameter_display_name(param)
             assert param in model_field.__dict__, (
-                f'В модели `{model_name}` для атрибута `{field}` '
-                f'укажите параметр `{display_name}`.'
+                f'In the `{field}` attribute of `{model_name}`, '
+                f'specify the parameter `{display_name}`.'
             )
             assert model_field.__dict__.get(param) == value_param, (
-                f'В модели `{model_name}` в атрибуте `{field}` '
-                f'проверьте значение параметра `{display_name}` '
+                f'In the `{field}` attribute of `{model_name}`, '
+                f'check whether the value of the `{display_name}` parameter '
                 'на соответствие заданию.'
             )

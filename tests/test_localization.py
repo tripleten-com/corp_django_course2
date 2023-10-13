@@ -8,14 +8,14 @@ import pytest
         'courses',
         'Course',
         'is_public',
-        'Установите галочку, чтобы сделать курс публичным.'
+        'Put a tick in the corresponding checkbox to make the course public.'
     ),
     (
         'courses',
         'Category',
         'slug',
-        'Идентификатор страницы для URL; '
-        'разрешены символы латиницы, цифры, дефис и подчёркивание.'
+        'The page identifier for the URL; '
+        'allows only Latin letters, numbers, hyphens, and underscores.'
     ),
     (
         'lessons',
@@ -29,7 +29,7 @@ def test_help_text_translate(n_app, n_model, param, text):
     model = getattr(module, n_model)
     field = model._meta.get_field(param)
     assert field.help_text == text, (
-        f'Убедитесь, что в приложении `{n_app}` в модели `{n_model}` значение `help_text` '
-        f'для атрибута `{param}` '
-        'установлено в соответствии с заданием.'
+        f'Make sure that in the `{n_app}`'s model `{n_model}`, the value of `help_text` '
+        f'has the value `{param}` '
+        'that matches the task.'
     )
