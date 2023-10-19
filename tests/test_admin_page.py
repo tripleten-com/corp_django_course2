@@ -112,6 +112,6 @@ def test_lesson_inline_config(expected_inline_class, config_attrs):
     for attr, value in config_attrs.items():
         actual_value = getattr(LessonInline, attr)
         assert actual_value == value, (
-            f'Убедитесь, что в файле `courses/admin.py` для класса `LessonInline` '
+            f'Make sure the `LessonType`class is declared for the `LessonInline`class '
             f'The value of the `{attr}` attribute is set according to the task.'
         )

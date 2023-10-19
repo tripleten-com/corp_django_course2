@@ -1,13 +1,13 @@
 # corp_django_course2
 
-## Как работать с репозиторием
-Чтобы начать выполнение задания необходимо скопировать url вашего репозитория и склонировать его себе (обратите внимание, что вы клонируете именно ваш репозиторий, а не исходный шаблон!).  
+## How to Work With the Repository
+To start the task, you need to copy the URL of your repository and clone it (please note that you are cloning your own repository, not the original template!).  
   ![image](https://user-images.githubusercontent.com/14962819/235600053-de6be309-56d5-4c5f-adc3-d466887962f6.png)
   
-### Создайте виртуальное окружение
+### Create a virtual environment
 
-1. Запустите редактор Visual Studio Code и через меню «*Файл» / «Открыть директорию»* откройте папку *Dev/corp_django_course2/*. 
-2. Запустите терминал в VS Code, удостоверьтесь, что вы работаете из директории *corp_django_course2/* (если вы работаете под Windows, убедитесь, что в терминале запущен Git Bash, а не PowerShell или что-нибудь ещё), и выполните команду:
+1. Launch the Visual Studio Code editor, and through the "*File" / "Open Directory"* menu, open the *Dev/corp_django_course2/* folder. 
+2. Launch the terminal in VS Code and make sure you work from the *corp_django_course2/* directory. If you use Windows, make sure Git Bash runs in the terminal and not through anything else, like PowerShell. Run this command:
 - Linux/macOS
     
     ```bash
@@ -20,14 +20,14 @@
     python -m venv venv
     ```
    
-В директории *corp_django_course2/* будет развёрнуто виртуальное окружение и появится папка `venv`, в которой будут храниться все зависимости проекта, а структура файлов станет такой:
+The virtual environment will be deployed in the *corp_django_course2/* directory. The `venv` folder will be there too and will store all the project dependencies. The file structure will look like this:
 
 ```
 Dev/
  └── corp_django_course2/
-     ├── .github/    Служебная папка с настройками репозитория (скрытая)   
-     ├── .vscode/    Служебная папка редактора кода (опционально, скрытая)
-     ├── .git/       Служебная информация Git (скрытая)
+     ├── .github/    Folder with repository configs (hidden)   
+     ├── .vscode/    Folder of the code editor (optional, hidden)
+     ├── .git/       Git system information (hidden)
      ├── tests/             Тесты для проверки проекта
      ├── venv/              Директория виртуального окружения
      ├── pragmatic/          <-- Директория проекта

@@ -457,7 +457,7 @@
     "pk": 1,
     "fields": {
         "title": "Basic Programming",
-        "description": "Курс по основам программирования на языке Python",
+        "description": "Course on Python programming basics",
         "slug": "osnovy-programmirovaniya",
         "created_at": "2023-04-17T13:37:25.058Z"
     }
@@ -466,8 +466,8 @@
     "model": "courses.category",
     "pk": 2,
     "fields": {
-        "title": "Веб-разработка",
-        "description": "Курс по веб-разработке с использованием Django",
+        "title": "Web Development",
+        "description": "Course on web development with Django",
         "slug": "web-razrabotka",
         "created_at": "2023-04-17T13:37:25.063Z"
     }
@@ -476,8 +476,8 @@
     "model": "courses.category",
     "pk": 3,
     "fields": {
-        "title": "Мобильная разработка",
-        "description": "Курс по разработке мобильных приложений",
+        "title": "Mobile Development",
+        "description": "Course on mobile application development",
         "slug": "mobilnaya-razrabotka",
         "created_at": "2023-04-17T13:37:25.066Z"
     }
@@ -486,8 +486,8 @@
     "model": "courses.course",
     "pk": 1,
     "fields": {
-        "title": "Python для начинающих",
-        "description": "Курс по основам программирования на языке Python",
+        "title": "Python for Beginners",
+        "description": "Course on Python programming basics",
         "author": 1,
         "category": 1,
         "is_public": true,
@@ -499,8 +499,8 @@
     "model": "courses.course",
     "pk": 2,
     "fields": {
-        "title": "Django для веб-разработки",
-        "description": "Курс по веб-разработке с использованием Django",
+        "title": "Django for Web Development",
+        "description": "Course on web development with Django",
         "author": 1,
         "category": 2,
         "is_public": true,
@@ -512,8 +512,8 @@
     "model": "courses.course",
     "pk": 3,
     "fields": {
-        "title": "ООП в Java",
-        "description": "Курс по объектно-ориентированному программированию на языке Java",
+        "title": "The OOP in Java",
+        "description": "Course on object-oriented programming in Java",
         "author": 2,
         "category": 1,
         "is_public": false,
@@ -525,8 +525,8 @@
     "model": "courses.course",
     "pk": 4,
     "fields": {
-        "title": "JavaScript для начинающих",
-        "description": "Курс по основам программирования на языке JavaScript",
+        "title": "JavaScript for Beginners",
+        "description": "Course on Java programming basics",
         "author": 2,
         "category": 2,
         "is_public": true,
@@ -538,8 +538,8 @@
     "model": "courses.course",
     "pk": 5,
     "fields": {
-        "title": "React для веб-разработки",
-        "description": "Курс по веб-разработке с использованием React",
+        "title": "React for Web Development",
+        "description": "Course on web development with React",
         "author": 1,
         "category": 2,
         "is_public": true,
@@ -551,8 +551,8 @@
     "model": "courses.course",
     "pk": 6,
     "fields": {
-        "title": "Кросс-платформенные мобильных приложения на React Native",
-        "description": "Создание кросс-платформенных мобильных приложений на React Native",
+        "title": "Cross-Platform Mobile Apps With React Native",
+        "description": "Creating cross-platform mobile apps with React Native",
         "author": 2,
         "category": 3,
         "is_public": false,
@@ -564,8 +564,8 @@
     "model": "courses.course",
     "pk": 7,
     "fields": {
-        "title": "Алгоритмы и структуры данных на Python",
-        "description": "Курс по алгоритмам и структурам данных на языке Python",
+        "title": "Algorithms and Data Structures With Python",
+        "description": "Course on algorithms and data structures with Python",
         "author": 2,
         "category": 1,
         "is_public": true,
@@ -577,8 +577,8 @@
     "model": "courses.course",
     "pk": 8,
     "fields": {
-        "title": "Алгоритмы и структуры данных на Java",
-        "description": "Курс по алгоритмам и структурам данных на языке Java",
+        "title": "Algorithms and Data Structures With Java",
+        "description": "Course on algorithms and data structures with Java",
         "author": 2,
         "category": 1,
         "is_public": false,
@@ -590,8 +590,8 @@
     "model": "courses.course",
     "pk": 9,
     "fields": {
-        "title": "Kotlin для разработки мобильных приложений под Android",
-        "description": "Курс по программированию на Kotlin для разработки мобильных приложений под Android",
+        "title": "Kotlin for Android Mobile App Development",
+        "description": "Course on Kotlin programming for Android mobile app development",
         "author": 2,
         "category": 3,
         "is_public": true,
@@ -603,8 +603,8 @@
     "model": "courses.course",
     "pk": 10,
     "fields": {
-        "title": "Веб-дизайн с HTML и CSS",
-        "description": "Курс по веб-дизайну с использованием HTML и CSS",
+        "title": "Web Design With HTML and CSS",
+        "description": "Course on web design with HTML and CSS",
         "author": 1,
         "category": 2,
         "is_public": true,
@@ -616,8 +616,8 @@
     "model": "courses.course",
     "pk": 11,
     "fields": {
-        "title": "Python для продвинутых",
-        "description": "Курс по продвинутому программированию на языке Python",
+        "title": "Advanced Python",
+        "description": "Course on advanced programming in Python",
         "author": 1,
         "category": 1,
         "is_public": true,
@@ -629,8 +629,8 @@
     "model": "courses.course",
     "pk": 12,
     "fields": {
-        "title": "SQL для баз данных",
-        "description": "Курс по языку SQL и работе с базами данных",
+        "title": "SQL for Databases",
+        "description": "Course on SQL and working with databases",
         "author": 1,
         "category": 2,
         "is_public": true,
@@ -642,8 +642,8 @@
     "model": "courses.course",
     "pk": 13,
     "fields": {
-        "title": "Разработка мобильных приложений на iOS с использованием Swift",
-        "description": "Курс по разработке мобильных приложений на iOS с использованием Swift",
+        "title": "Developing iOS Apps With Swift",
+        "description": "Course on developing iOS apps with Swift",
         "author": 2,
         "category": 3,
         "is_public": true,
@@ -655,8 +655,8 @@
     "model": "courses.course",
     "pk": 14,
     "fields": {
-        "title": "Анализ данных в Python",
-        "description": "Курс по анализу данных на языке Python",
+        "title": "Data Analysis With Python",
+        "description": "Course on data analysis with Python",
         "author": 2,
         "category": 1,
         "is_public": true,
@@ -668,8 +668,8 @@
     "model": "lessons.lesson",
     "pk": 1,
     "fields": {
-        "title": "Урок 1. Введение в программирование",
-        "text": "В этом уроке мы рассмотрим Basic Programming",
+        "title": "Lesson 1. Introduction to Programming",
+        "text": "This lesson is about Basic Programming",
         "type": "theory",
         "duration": 60,
         "course": 1,
@@ -681,8 +681,8 @@
     "model": "lessons.lesson",
     "pk": 2,
     "fields": {
-        "title": "Урок 2. Основы языка Python",
-        "text": "В этом уроке мы рассмотрим основные конструкции языка Python",
+        "title": "Lesson 2. Python Basics",
+        "text": "In this lesson, you'll learn about the key structures of Python",
         "type": "edu",
         "duration": 120,
         "course": 1,
@@ -694,8 +694,8 @@
     "model": "lessons.lesson",
     "pk": 3,
     "fields": {
-        "title": "Урок 1. Введение в iOS разработку",
-        "text": "В этом уроке мы рассмотрим основы iOS разработки",
+        "title": "Lesson 1. Introduction to iOS Development",
+        "text": "This lesson is about iOS development basics",
         "type": "theory",
         "duration": 90,
         "course": 13,
@@ -707,8 +707,8 @@
     "model": "lessons.lesson",
     "pk": 4,
     "fields": {
-        "title": "Урок 2. Основы Swift",
-        "text": "В этом уроке мы рассмотрим основные конструкции языка Swift",
+        "title": "Lesson 2. Swift Basics",
+        "text": "In this lesson, you'll learn about key structures in Swift",
         "type": "edu",
         "duration": 120,
         "course": 13,
@@ -720,8 +720,8 @@
     "model": "lessons.lesson",
     "pk": 5,
     "fields": {
-        "title": "Урок 1. Основы Android разработки",
-        "text": "В этом уроке мы рассмотрим основы Android разработки",
+        "title": "Lesson 1. Android Development Basics",
+        "text": "This lesson is about Android development basics",
         "type": "theory",
         "duration": 90,
         "course": 9,
@@ -733,8 +733,8 @@
     "model": "lessons.lesson",
     "pk": 6,
     "fields": {
-        "title": "Урок 2. Основы Kotlin",
-        "text": "В этом уроке мы рассмотрим основные конструкции языка Kotlin",
+        "title": "Lesson 2. Kotlin Basics",
+        "text": "In this lesson, you'll learn about key structures in Kotlin",
         "type": "edu",
         "duration": 120,
         "course": 9,

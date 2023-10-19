@@ -23,7 +23,7 @@ pytestmark = [
 def test_exists_lesson_type_inner_class(attr, value, label):
     assert hasattr(Lesson, 'LessonType'), (
         'Make sure that in the model `lessons/models.py` '
-        'в модели `Lesson` объявлен класс `LessonType`.'
+        'in the `Lesson` model from the `courses/admin.py` file.'
     )
 
     actual_attr = getattr(Lesson.LessonType, attr, None)
