@@ -101,12 +101,12 @@ In the directory with the "manage.py" file, run the command:
 python manage.py runserver
 ```
 
-В ответ Django сообщит, что сервер запущен и проект доступен по адресу [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+In response to the command, Django will report that the server is running and the project is available at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 
-### Локальный запуск тестов
-После выполнения задания необходимо локально запустить тесты. in the console, go to the root directory of the project *Dev/corp_django_course2/* and run this command:
+###  Local test launch
+Having finished the task, launch the local tests. in the console, go to the root directory of the project *Dev/corp_django_course2/* and run this command:
 ```shell
 pytest
 ```
-Если все тесты пройдены успешно, то проект считается выполненным. В противном случае необходимо устранить моменты, которые не прошли проверку и повторно запустить тесты.
+If all the test cases are successful, the project will be considered finished. Otherwise, you will have to fix the parts that haven't passed the tests and launch them once again.
