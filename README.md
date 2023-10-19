@@ -28,25 +28,25 @@ Dev/
      ├── .github/    Folder with repository configs (hidden)   
      ├── .vscode/    Folder of the code editor (optional, hidden)
      ├── .git/       Git system information (hidden)
-     ├── tests/             Тесты для проверки проекта
-     ├── venv/              Директория виртуального окружения
-     ├── pragmatic/          <-- Директория проекта
+     ├── tests/             Tests for project verification
+     ├── venv/              Virtual environment directory
+     ├── pragmatic/          <-- Project directory
      |   ├── courses/
      |   ├── lessons/
      |   ├── pragmatic/
-     |   ├── db.sqlite3     Файл базы данных (может и не быть)
+     |   ├── db.sqlite3     Database file (might not exist)
      |   └── manage.py      
-     ├── .gitignore         Список файлов и папок, скрытых от отслеживания Git (скрытый) 
-     ├── db.json            <-- Фикстуры для базы данных    
-     ├── LICENSE            Лицензия   
-     ├── pytest.ini         Конфигурация тестов
-     ├── README.md          Описание проекта 
-     ├── requirements.txt   Список зависимостей проекта
-     └── setup.cfg          Настройки тестов
+     ├── .gitignore         List of files and folders hidden from Git tracking 
+     ├── db.json            <-- Fixtures for the database    
+     ├── LICENSE            License   
+     ├── pytest.ini         Tests configuration
+     ├── README.md          Project description 
+     ├── requirements.txt   Project dependency list
+     └── setup.cfg          Tests setup
 ```
 
-### Активация виртуального окружения
-в терминале перейдите в корневую директорию проекта *Dev/corp_django_course2/* и выполните команду:
+### Activation of the virtual environment
+in the console, go to the root directory of the project *Dev/corp_django_course2/* and run this command:
 - Linux/macOS
     
     ```bash
@@ -60,42 +60,42 @@ Dev/
     ```
     
 
-Теперь все команды в терминале будут предваряться строкой `(venv)`.
+Now all commands in the terminal will be preceded by the string `(venv)`.
 
-💡 Все дальнейшие команды в терминале надо выполнять с активированным виртуальным окружением.
+💡 All further commands in the terminal should be executed with the activated virtual environment.
 
-Обновите pip:
+Refresh pip:
 
 ```bash
 python -m pip install --upgrade pip
 ```
 
-### Установка зависимостей из файла *requirements.txt*:
-Находясь в папке *Dev/corp_django_course2/*, выполните команду:
+### Install the dependencies from the *requirements.txt* file
+Run the following command while you are in the *Dev/corp_django_course2/* folder:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-#### End of Support зависимостей
+#### End of support for dependencies
 
-Среди зависимостей выбраны LTS-версии зависимостей.
-Для Django выбрана версия 3.2, extended support которой
-заканчивается 1 апреля 2024 года.
+The LTS versions of dependencies have been chosen.
+For Django, the version 3.2 was selected. Its extended support
+ends on April 1, 2024.
 
-### Применение миграций
+### Using migrations
 
     
-В директории с файлом manage.py выполните команду: 
+In the directory with the "manage.py" file, run the command: 
 
 ```bash
 python manage.py migrate
 ```
 
-### Запуск проекта в dev-режиме
+### Running the project in dev mode
 
     
-В директории с файлом manage.py выполните команду: 
+In the directory with the "manage.py" file, run the command: 
 
 ```bash
 python manage.py runserver
@@ -105,7 +105,7 @@ python manage.py runserver
 
 
 ### Локальный запуск тестов
-После выполнения задания необходимо локально запустить тесты. В терминале перейдите в корневую директорию проекта *Dev/corp_django_course2/* и выполните команду:
+После выполнения задания необходимо локально запустить тесты. in the console, go to the root directory of the project *Dev/corp_django_course2/* and run this command:
 ```shell
 pytest
 ```
