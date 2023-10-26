@@ -2,7 +2,7 @@
 
 ## How to Work With the Repository
 To start the task, you need to copy the URL of your repository and clone it (please note that you are cloning your own repository, not the original template!).  
-  ![image](https://user-images.githubusercontent.com/14962819/235600053-de6be309-56d5-4c5f-adc3-d466887962f6.png)
+
   
 ### Create a virtual environment
 
@@ -64,7 +64,7 @@ Now all commands in the terminal will be preceded by the string `(venv)`.
 
 💡 All further commands in the terminal should be executed with the activated virtual environment.
 
-Refresh pip:
+Update pip:
 
 ```bash
 python -m pip install --upgrade pip
@@ -76,12 +76,6 @@ Run the following command while you are in the *Dev/corp_django_course2/* folder
 ```bash
 pip install -r requirements.txt
 ```
-
-#### End of support for dependencies
-
-The LTS versions of dependencies have been chosen.
-For Django, the version 3.2 was selected. Its extended support
-ends on April 1, 2024.
 
 ### Using migrations
 
