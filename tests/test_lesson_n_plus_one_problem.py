@@ -30,7 +30,7 @@ def test_lesson_name(admin_client, lessons):
     assert hasattr(LessonAdmin, 'lesson_name'), (
         'Make sure that the method `lesson_name` in `LessonAdmin` is declared according to the task.'
     )
-    assert getattr(LessonAdmin.lesson_name, 'short_description', None) == 'Lesson title', (
+    assert getattr(LessonAdmin.lesson_name, 'short_description', None) == 'Lesson name', (
         'Make sure the method `lesson_name` in `LessonAdmin` '
         'has the required attribute `short_description` according to the task.'
     )

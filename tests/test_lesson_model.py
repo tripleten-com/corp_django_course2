@@ -17,7 +17,7 @@ pytestmark = [
     [
         ('EDU', 'edu', 'Programming'),
         ('THEORY', 'theory', 'Theory'),
-        ('QUIZ', 'quiz', 'Trivia'),
+        ('QUIZ', 'quiz', 'Quiz'),
     ]
 )
 def test_exists_lesson_type_inner_class(attr, value, label):
@@ -36,7 +36,7 @@ def test_exists_lesson_type_inner_class(attr, value, label):
 @pytest.mark.parametrize(('field', 'type', 'params'), [
     ('title', CharField, {'max_length': 256}),
     ('text', TextField, {}),
-    ('type', CharField, {'max_length': 16, 'choices': [('edu', 'Programming'), ('theory', 'Theory'), ('quiz', 'Trivia')]}),
+    ('type', CharField, {'max_length': 16, 'choices': [('edu', 'Programming'), ('theory', 'Theory'), ('quiz', 'Quiz')]}),
     ('duration', PositiveSmallIntegerField, {}),
     ('course', ForeignKey, {'null': False}),
     ('created_at', DateTimeField, {'auto_now_add': True}),
